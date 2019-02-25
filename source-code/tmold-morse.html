@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="tmold-home.css">
+		<title>Morse Code</title>
+	</head>
+	<body>
+
+		<header>
+			<h1>Morse Code</h1>
+			<p>A Morse Code Encoder and Decoder.</p>
+		</header>
+
+
+
+
+		<div class="topnav">
+			<a class="active" href="tmold-home.html">Home</a>
+			<a href="tmold-caesar.html">Caesar Cipher</a>
+			<a href="tmold-morse.html">Morse Code</a>
+		</div>
+
+
+
+
+		<h2>Morse Code Encoder</h2>
+		<div id="morse-encode">
+			<label>Enter the Text you wish to encode:</label></br>
+			<textarea rows="1" cols="50" autofocus id="text">Text here</textarea></br>
+			<button type="button" onclick="encode()" id="encode_button">Encode</button>
+		</div>
+
+
+
+		<div id="morse-output">
+			<p>Encoded Output:</br>
+				<div id="output">
+		</div>
+
+
+
+		<script type="text/javascript" src="morse.js"></script>
+	</body>
+</html>

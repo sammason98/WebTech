@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="tmold-caesar.css">
+		<title>Ceaser Cipher</title>
+	</head>
+
+	<body>
+
+		<div id="ceaser-input">
+
+			<textarea rows="1" cols="50" autofocus id="message">Type the text you wish to encrypt here</textarea></br>
+			<label>Enter the Number of Shifts you wish to Encrypt with:</label></br>
+			<input type="number" id="key" value="text here"></ins>
+			<button type ="button" onclick="encrypt()" id="encrypt_button">Encrypt</button>
+		</div>
+
+		<div id="ceaser-output">
+
+			<p>This is the Encrypted output:<br/>
+				<div id="result"></div>
+			
+		</div>
+		<script type="text/javascript" src="ceaser.js"></script>
+
+	</body>
+</html>

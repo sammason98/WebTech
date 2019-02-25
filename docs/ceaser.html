@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="tmold-caesar.css">
+		<title>Ceaser Cipher</title>
+	</head>
+
+	<body>
+		<h1>Ceaser Cipher Encryptor</h1>
+		<p>A Ceaser Cipher Encoder and Decoder.</p>
+
+
+		<div class="topnav">
+			<a class="active" href="tmold-home.html">Home</a>
+			<a href="tmold-caesar.html">Caesar Cipher</a>
+			<a href="tmold-morse.html">Morse Code</a>
+		</div>
+
+
+
+
+		<h2>Ceaser Encrypt</h2>
+		<div id="ceaser-encrypt">
+			<label>Enter the Plain Text you wish to Encrypt below:</label></br>
+			<textarea rows="1" cols="50" autofocus id="message">Text here</textarea>
+			</br>
+			<label>Enter the Number of Shifts you wish to Encrypt with:</label>
+			</br>
+			<input type="number" id="cshift"></input>
+			<button type ="button" onclick="encrypt()" id="encrypt_button">Encrypt</button>
+		</div>
+
+
+
+
+
+		<div id="ceaser-output">
+			<p>Encrypted Output:<br/>
+				<div id="eoutput"></div>
+		</div>
+		
+
+
+
+		<h2>Ceaser Decrypt</h2>
+		<div id="ceaser-decrypt">
+			<label>Enter the Cipher Text you wish to Decrypt below:</label></br>
+			<textarea rows="1" cols="50" autofocus id="ciphert">Text here</textarea></br>
+			<label>Enter the Number of Shifts you wish to Decrypt with:</label></br>
+			<input type="number" id="dcshift"></input>
+			<button type ="button" onclick="decrypt()" id="decrypt_button">Decrypt</button>
+		</div>
+
+
+
+
+		<div id="ceaser-output">
+			<p>Decrypted Output:<br/>
+				<div id="doutput">
+		</div>
+
+
+
+
+		<script type="text/javascript" src="ceaser.js"></script>
+
+	</body>
+
+</html>
